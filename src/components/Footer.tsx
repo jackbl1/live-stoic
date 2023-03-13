@@ -1,5 +1,5 @@
 import { Background } from "../background/Background";
-import { CenteredFooter } from "../footer/CenteredFooter";
+import { CenteredFooter } from "./footer/CenteredFooter";
 import { Section } from "../layout/Section";
 
 const Footer = () => (

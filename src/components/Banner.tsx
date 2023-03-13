@@ -1,4 +1,4 @@
-import { CTABanner } from "../cta/CTABanner";
+import { CTABanner } from "./cta/CTABanner";
 import { Section } from "../layout/Section";
 
 const Banner = () => (

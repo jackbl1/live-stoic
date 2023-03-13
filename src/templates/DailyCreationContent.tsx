@@ -2,16 +2,17 @@ import { Meta } from "../layout/Meta";
 import { Navbar } from "../components/Navbar";
 import { AppConfig } from "../utils/AppConfig";
 import { Footer } from "../components/Footer";
-import { AboutParagraphs } from "../components/AboutParagraphs";
+import { DailyCreationParagraphs } from "../daily-creation/DailyCreationParagraphs";
+import { DailyCreationApp } from "../daily-creation/DailyCreationApp";
 
-const AboutContent = () => (
+const DailyCreationContent = () => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
-    <AboutParagraphs />
-    {/* <Banner /> */}
+    <DailyCreationApp />
+    <DailyCreationParagraphs />
     <Footer />
   </div>
 );
 
-export { AboutContent };
+export { DailyCreationContent };

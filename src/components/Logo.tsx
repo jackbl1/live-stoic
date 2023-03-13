@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ILogoProps = {
   xl?: boolean;
 };
@@ -9,7 +11,12 @@ const Logo = (props: ILogoProps) => {
 
   return (
     <span className={`text-gray-900 inline-flex items-left ${fontStyle}`}>
-      <img src="/assets/images/livestoic-logo.png" alt="Logo" />
+      <Image
+        src="/assets/images/livestoic-logo.png"
+        alt="Logo"
+        width={276}
+        height={82}
+      />
     </span>
   );
 };

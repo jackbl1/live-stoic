@@ -1,9 +1,16 @@
-import { AppProps } from 'next/app';
+import { SessionProvider } from "next-auth/react";
+import { AppProps } from "next/app";
+import "../styles/global.css";
+import { MetamaskProvider } from "../hooks/useMetamask";
 
-import '../styles/global.css';
-
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <MetamaskProvider>
+      <SessionProvider session={pageProps.session} refetchInterval={0}>
+        <Component {...pageProps} />
+      </SessionProvider>
+    </MetamaskProvider>
+  );
+}
 
 export default MyApp;

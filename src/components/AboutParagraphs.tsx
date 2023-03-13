@@ -1,7 +1,7 @@
-import { VerticalFeatureRow } from "../feature/VerticalFeatureRow";
+import { VerticalFeatureRow } from "./feature/VerticalFeatureRow";
 import { Section } from "../layout/Section";
 
-const VerticalFeatures = () => (
+const AboutParagraphs = () => (
   <Section
     title="About Live Stoic"
     description="Live Stoic is a project to help you live a better life through stoic philosophy. We will be releasing games and exercises to make you think about your life with a stoic mindset.
@@ -36,4 +36,4 @@ const VerticalFeatures = () => (
   </Section>
 );
 
-export { VerticalFeatures };
+export { AboutParagraphs };
